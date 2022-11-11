@@ -36,20 +36,7 @@ public class CheckOutTest extends TestSetUp {
 		List<Product> actualproducts= yourCheckOutPg.GetProducts();
 		yourCheckOutPg.ClickOnCheckOutButton();
 		
-		YourCheckOutInformationPage yourCheckOutInfoPg=new YourCheckOutInformationPage(driver);
-		yourCheckOutInfoPg.EnterPersonalDetails("myFirstName", "MyLastName", "99");
-		
-		CheckOutOverviewPage checkOutOvrPg=new CheckOutOverviewPage(driver);
-		String[] arr=checkOutOvrPg.ReturnSubTotal().split(" ");
-		Float actualSubTotal= Float.parseFloat(arr[arr.length-1].replace('$', ' '));
-		Float expectedSubTotal=GetSubTotal(actualproducts);
-		assertEquals(actualSubTotal, expectedSubTotal);
-		
-		checkOutOvrPg.ClickOnFinishButton();
-		
-		ConfirmationPage confirmPg=new ConfirmationPage(driver);
-		String title=confirmPg.GetHeaderMessage();
-		assertEquals(title, "THANK YOU FOR YOUR ORDER");
+		//Validating products , name, price in cart
 		int count=0;
 		for(Product actprd : actualproducts) {
 			for(Product expprd:expectedproducts) {
@@ -63,6 +50,26 @@ public class CheckOutTest extends TestSetUp {
 			}
 		}
 		assertEquals(count, 2);
+		
+		YourCheckOutInformationPage yourCheckOutInfoPg=new YourCheckOutInformationPage(driver);
+		yourCheckOutInfoPg.EnterPersonalDetails("myFirstName", "MyLastName", "99");
+		
+		CheckOutOverviewPage checkOutOvrPg=new CheckOutOverviewPage(driver);
+		String[] arr=checkOutOvrPg.ReturnSubTotal().split(" ");
+		Float actualSubTotal= Float.parseFloat(arr[arr.length-1].replace('$', ' '));
+		Float expectedSubTotal=GetSubTotal(actualproducts);
+		
+		//validating price total
+		assertEquals(actualSubTotal, expectedSubTotal);
+		
+		checkOutOvrPg.ClickOnFinishButton();
+		
+		ConfirmationPage confirmPg=new ConfirmationPage(driver);
+		String title=confirmPg.GetHeaderMessage();
+		
+		//validating confirmation message 
+		assertEquals(title, "THANK YOU FOR YOUR ORDER");
+		
 	}
 	
 	Float GetSubTotal(List<Product> products)
