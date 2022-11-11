@@ -23,7 +23,7 @@
   
   <build>
    <sourceDirectory>${basedir}/src</sourceDirectory>
-   <testSourceDirectory>${basedir}/test</testSourceDirectory>
+   <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
   	<plugins>
   		<plugin>
   			<groupId>org.apache.maven.plugins</groupId>

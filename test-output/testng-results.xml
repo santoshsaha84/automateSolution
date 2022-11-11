@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-11T04:30:27Z" name="Default suite" finished-at="2022-11-11T04:30:35Z" duration-ms="8355">
+  <suite started-at="2022-11-11T06:36:44Z" name="Default suite" finished-at="2022-11-11T06:36:53Z" duration-ms="9489">
     <groups>
     </groups>
-    <test started-at="2022-11-11T04:30:27Z" name="Default test" finished-at="2022-11-11T04:30:35Z" duration-ms="8355">
+    <test started-at="2022-11-11T06:36:44Z" name="Default test" finished-at="2022-11-11T06:36:53Z" duration-ms="9489">
       <class name="com.automateSolution.testcases.CheckOutTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.automateSolution.testcases.CheckOutTest@79dc5318]" started-at="2022-11-11T04:30:27Z" name="Setup" finished-at="2022-11-11T04:30:29Z" duration-ms="2116" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.automateSolution.testcases.CheckOutTest@79dc5318]" started-at="2022-11-11T06:36:44Z" name="Setup" finished-at="2022-11-11T06:36:47Z" duration-ms="2665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="login()[pri:0, instance:com.automateSolution.testcases.CheckOutTest@79dc5318]" started-at="2022-11-11T04:30:29Z" name="login" finished-at="2022-11-11T04:30:35Z" duration-ms="5858" status="PASS">
+        <test-method signature="login()[pri:0, instance:com.automateSolution.testcases.CheckOutTest@79dc5318]" started-at="2022-11-11T06:36:47Z" name="login" finished-at="2022-11-11T06:36:53Z" duration-ms="6131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.automateSolution.testcases.CheckOutTest@79dc5318]" started-at="2022-11-11T04:30:35Z" name="TearDown" finished-at="2022-11-11T04:30:35Z" duration-ms="355" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.automateSolution.testcases.CheckOutTest@79dc5318]" started-at="2022-11-11T06:36:53Z" name="TearDown" finished-at="2022-11-11T06:36:53Z" duration-ms="666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
