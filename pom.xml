@@ -22,9 +22,7 @@
 </properties>
   
   <build>
-   <sourceDirectory>${basedir}/src</sourceDirectory>
-   <testSourceDirectory>${basedir}/src/test/java</testSourceDirectory>
-  	<plugins>
+   	<plugins>
   		<plugin>
   			<groupId>org.apache.maven.plugins</groupId>
   			<artifactId>maven-surefire-plugin</artifactId>
