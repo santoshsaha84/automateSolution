@@ -22,6 +22,8 @@
 </properties>
   
   <build>
+   <sourceDirectory>${basedir}/src</sourceDirectory>
+   <testSourceDirectory>${basedir}/test</testSourceDirectory>
   	<plugins>
   		<plugin>
   			<groupId>org.apache.maven.plugins</groupId>
